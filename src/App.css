@@ -1,0 +1,94 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+} */
+html {
+  background-color: #0e1015;
+}
+/* SignUp and Login Page CSS */
+.signup,
+.signin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1015;
+}
+.signup-form,
+.signin-form {
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 40px -10px rgba(132, 240, 105, 0.3);
+  background-color: #1447FF;
+}
+.form-title,
+.contactForm-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+.form-group .zmdi {
+  position: relative;
+  left: 25px;
+}
+.myInput {
+  font-size: 15px;
+  padding: 8px 22px;
+  padding-left: 30px;
+  border-radius: 999999px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #555555;
+}
+.form-submit,
+.contactSubmit {
+  font-size: 14px;
+  margin-top: 8px;
+  border-radius: 99999px;
+  outline: none;
+  border: none;
+  padding: 8px 25px;
+  color: #fff;
+  background: #000;
+}
+.signup-link,
+.signin-link {
+  margin-top: 0;
+  color: #303030;
+  font-size: 14px;
+}
+
+/* Form Header Centered Tabs */
+
+.MuiTabs-root {
+  background-color: #333333;
+}
+
+
+.MuiTabs-root button {
+  color: #6186FF;
+}
+.MuiTabs-root button:active {
+  color: #6186FF;
+}
+.MuiTabs-root button {
+  color: #6186FF;
+}
+.MuiTabs-root button.Mui-selected {
+  color: #6186FF;
+}
+.MuiTabs-indicator,
+.PrivateTabIndicator-colorPrimary-5 {
+  background-color: #6186FF !important;
+}
+.MuiButton-containedPrimary {
+  background: linear-gradient(45deg, #1447FF, #6186FF) !important;
+  /* color: #0e1015 !important; */
+}

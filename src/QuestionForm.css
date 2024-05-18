@@ -1,0 +1,53 @@
+.question-form {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.form-heading {
+  text-align: center;
+}
+
+.form-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px outset;
+  }
+.question-type {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.question-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.question-input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px outset;
+}
+
+.option-input {
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px outset;
+}
+
+.add-option-button {
+  display: block;
+  margin: 10px 0;
+}
+
+.add-answer-button {
+    margin-right: 10px;
+}
+
+.add-question-button,
+.submit-button {
+  margin: 20px 10px;
+  padding: 5px;
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+.header {
+  position: sticky;
+  padding: 14px 30px;
+
+  display: flex;
+  /* height: 47px; */
+  background-color: #333333;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form_image {
+  height: 40px;
+  width: 40px;
+}
+
+.titleHeading {
+  color: #6186FF;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.04em;
+}
+.logout {
+  height: 30px;
+}

@@ -1,0 +1,33 @@
+.template_body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.create-card {
+  width: calc(25% - 40px);
+  height: 160px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;              
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  transition: all 0.3s ease;
+}
+
+.create-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.title {
+  color: #ffffff;
+  font-size: 18px;
+}
