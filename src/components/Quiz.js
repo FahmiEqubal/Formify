@@ -17,7 +17,7 @@ function Quiz() {
         e.preventDefault();
         setIsLoading(true);
         try {
-            const response = await axios.get(`http://localhost:5000/api/scrape?url=${encodeURIComponent(urlInput)}`);
+            const response = await axios.get(`https://serverformify.onrender.com/api/scrape?url=${encodeURIComponent(urlInput)}`);
             const questionsWithCorrectAnswer = response.data.map(question => {
                 const correctAnswerIndex = question.options.indexOf(question.correctAnswer);
                 return {

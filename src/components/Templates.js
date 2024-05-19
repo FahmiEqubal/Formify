@@ -22,7 +22,7 @@ function Templates() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:5000/get_all_filenames"
+          "https://serverformify.onrender.com/get_all_filenames"
         );
         setFiles(response.data);
       } catch (error) {
@@ -36,7 +36,7 @@ function Templates() {
     async function fetchRecentForms() {
       try {
         const response = await axios.get(
-          "http://localhost:5000/get_recent_forms"
+          "https://serverformify.onrender.com/get_recent_forms"
         );
         setRecentForms(response.data.recentForms); 
       } catch (error) {
@@ -50,7 +50,7 @@ function Templates() {
   useEffect(() => {
     async function fetchForm(formId) {
       try {
-        const response = await axios.get(`http://localhost:5000/get_form/${formId}`);
+        const response = await axios.get(`https://serverformify.onrender.com/get_form/${formId}`);
         setFormData(response.data);
       } catch (error) {
         console.error("Error fetching form data:", error);

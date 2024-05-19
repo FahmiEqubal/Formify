@@ -59,7 +59,7 @@ function QuestionForm() {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:5000/add_questions", {
+      const response = await fetch("https://serverformify.onrender.com/add_questions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

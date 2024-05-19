@@ -89,7 +89,7 @@ export default function CenteredTabs() {
 
   const fetchResponses = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/responses");
+      const response = await axios.get("https://serverformify.onrender.com/responses");
       const data = response.data.map((item) => {
         const score = item.answers.reduce((acc, answer) => (answer.isCorrect ? acc + 1 : acc), 0);
         return {

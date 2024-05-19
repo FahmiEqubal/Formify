@@ -11,7 +11,7 @@ const Logout = () => {
   useEffect(() => {
     // callAboutPage();
     axios
-      .get("http://localhost:5000/logout", { withCredentials: true })
+      .get("https://serverformify.onrender.com/logout", { withCredentials: true })
       .then((res) => {
         dispatch({ type: "USER", payload: false });
         console.log("Token Passed successfully");

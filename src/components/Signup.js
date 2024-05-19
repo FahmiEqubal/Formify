@@ -33,7 +33,7 @@ const Signup = () => {
       cpassword: user.cpassword,
     };
 
-    axios.post("http://localhost:5000/register", newUser).then((res) => {
+    axios.post("https://serverformify.onrender.com/register", newUser).then((res) => {
       if (res.status === 422) {
         window.alert("Invalid Registeration");
         console.log("Invalid Registeration");

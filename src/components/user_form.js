@@ -39,7 +39,7 @@ function User_form() {
     } else {
       async function fetchQuestions() {
         try {
-          const response = await axios.get("http://localhost:5000/questions/latest");
+          const response = await axios.get("https://serverformify.onrender.com/questions/latest");
           const { data } = response;
           console.log("Fetched data:", data); // Log fetched data for debugging
           dispatch({
@@ -118,7 +118,7 @@ function User_form() {
     });
 
     try {
-      await axios.post("http://localhost:5000/submit_responses", {
+      await axios.post("https://serverformify.onrender.com/submit_responses", {
         userName,
         answers: updatedAnswers,
         documentId: questions[0]._id

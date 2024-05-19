@@ -19,7 +19,7 @@ const Login = () => {
     const user = { email, password };
 
     axios
-      .post("http://localhost:5000/login", user, {
+      .post("https://serverformify.onrender.com/login", user, {
         withCredentials: true,
       })
       .then((res) => {
