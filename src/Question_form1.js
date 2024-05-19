@@ -67,7 +67,7 @@ function Question_form() {
 
   useEffect(() => {
     async function data_adding() {
-      var request = await axios.get(`http://localhost:5000/data/${id}`);
+      var request = await axios.get(`https://serverformify.onrender.com/data/${id}`);
       console.log("Equbal");
       var question_data = request.data.questions;
       console.log(question_data);
@@ -133,7 +133,7 @@ function Question_form() {
   //     questions: questions,
   //   });
 
-  //   axios.post(`http://localhost:5000/add_questions/${id}`, {
+  //   axios.post(`https://serverformify.onrender.com/add_questions/${id}`, {
   //     "document_name": documentName,
   //     "doc_desc": documentDescription,
   //     "questions": questions,
@@ -147,7 +147,7 @@ function Question_form() {
     });
 
     axios
-      .post(`http://localhost:5000/add_questions/${id}`, {
+      .post(`https://serverformify.onrender.com/add_questions/${id}`, {
         document_name: documentName,
         doc_desc: documentDescription,
         questions: questions,
